@@ -1,0 +1,41 @@
+@import 'variable.scss';
+@each $size,
+$value in $spacing {
+    .pdng-#{$size} {
+        padding: $value !important;
+    }
+    .pdng-top-#{$size} {
+        padding-top: $value !important;
+    }
+    .pdng-bottom-#{$size} {
+        padding-bottom: $value !important;
+    }
+    .pdng-rt-#{$size} {
+        padding-right: $value !important;
+    }
+    .pdng-lt-#{$size} {
+        padding-left: $value !important;
+    }
+    .margin-#{$size} {
+        margin: $value !important;
+    }
+    .margin-top-#{$size} {
+        margin-top: $value !important;
+    }
+    .margin-bottom-#{$size} {
+        margin-bottom: $value !important;
+    }
+    .margin-right-#{$size} {
+        margin-right: $value !important;
+    }
+    .margin-left-#{$size} {
+        margin-left: $value !important;
+    }
+}
+
+@each $size,
+$value in $font {
+    .fnt-#{$size} {
+        font-size: $value !important;
+    }
+}
